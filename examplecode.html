@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <meta
+      name="google-signin-client_id"
+      content="342683985491-vr7eglo91agrg5l1jmd0seh9r8cis3sb.apps.googleusercontent.com"
+    />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="examplecode.js"></script>
+    <style>
+      .boxcont {
+        text-align: center;
+        margin-right: 50px;
+        margin-left: 50px;
+        border-style: solid;
+      }
+      .container {
+        display: inline-block;
+        font-size: 15px;
+        height: 15px;
+      }
+      .g-signin2 {
+        margin-left: 650px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      .data1 {
+        display: none;
+      }
+      .data2 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxcont">
+      <h3>Sign In</h3>
+      <div class="container">
+        <input type="checkbox" id="manager" />Manager&nbsp;
+        <input type="checkbox" id="hr" />HR
+      </div>
+      <br />
+      <br />
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </div>
+    <div class="data1" id="page1">
+      <p>this is Manager home page</p>
+    </div>
+    <div class="data2" id="page2">
+      <p>this is HR home page</p>
+    </div>
+  </body>
+</html>
